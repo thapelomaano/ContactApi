@@ -1,0 +1,20 @@
+Normalized Schema Design
+Contacts Table
+Stores basic contact information.
+
+Column	Type	Description
+Id	INTEGER	Primary Key (auto-incr.)
+FirstName	TEXT	Required
+LastName	TEXT	Required
+Email	TEXT	Optional, unique
+PhoneNumber	TEXT	Optional
+Address	TEXT	Optional
+DateOfBirth	DATE	Optional
+
+Notes Table
+Stores notes related to each contact.
+
+Column	Type	Description
+Id	INTEGER	Primary Key (auto-increment)
+Content	TEXT	Required note text
+ContactId	INTEGER	Foreign Key → Contacts(Id)
