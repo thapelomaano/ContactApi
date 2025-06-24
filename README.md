@@ -43,3 +43,5 @@
     cd ContactAPI
     dotnet ef database update   # Apply DB migrations
     dotnet run
+
+    # Sql script can be found in the scripts folder
